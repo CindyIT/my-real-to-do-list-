@@ -6,6 +6,7 @@
 
 body {
     background: url('IMAGE/9.jpg') no-repeat center center fixed;
+
     background-size: cover; /* Ensures the image covers the entire background */
     font-family: "Amasis MT Pro Black", sans-serif;
     color: #222;
