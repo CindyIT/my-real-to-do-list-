@@ -15,7 +15,10 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-}.container {
+}
+
+
+.container {
     flex-grow: 1; /* Pushes the footer down */
     display: flex;
     flex-direction: column;
@@ -42,7 +45,9 @@ h1 {
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
     margin-bottom: 20px;
 }
-}/* Animation for the h1 element */
+}
+
+/* Animation for the h1 element */
 @keyframes slideIn {
     0% {
         transform: translateY(-100%);
@@ -85,7 +90,42 @@ h1::after {
 
 h1::before {
     content: "🎉  "; /* Adding an emoji before the text */
-}    border-color: #ff4500;
+}
+
+h1::after {
+    content: " 🎯"; /* Adding another emoji after the text */
+}
+
+
+
+
+form {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    transform: translateY(50px);
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: 2px solid #ff6ec7; /* Bright pink border */
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    transition: border 0.3s ease-in-out;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #a9a9a9;
+}
+
+.input:focus {
+    border-color: #ff4500;
     outline: none;
 }
 
@@ -121,6 +161,7 @@ h1::before {
     color: #008000;
     margin-left: 10px;
 }
+
 .info {
     position: fixed;
     top: 1rem;
@@ -138,6 +179,7 @@ h1::before {
     font-size: 0.9rem;
     color: white;
 }
+
 .footer {
     background-color: black; /* Kept background black */
     color: #c71585; /* Dark pink text */
