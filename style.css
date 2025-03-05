@@ -163,43 +163,14 @@ form {
 
 
 .footer {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ff6f61;
-    color: white;
-    padding: 10px 20px;
+    background-color: black; /* Kept background black */
+    color: #c71585; /* Dark pink text */
+    padding: 1.5rem; /* Slightly increased padding for better spacing */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 1rem;
+    text-align: center;
+    font-size: 1rem; /* Increased font size to roughly twice the original */
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0px -4px 10px rgba(255, 20, 147, 0.5); /* Subtle dark pink glow */
+    margin-top: 0px;
 }
-
-.instructions {
-    display: none; /* Hidden by default */
-    margin-top: 1rem;
-    background-color: #ffebf5;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.show-btn, .close-btn {
-    background-color: #ff4500;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.show-btn:hover, .close-btn:hover {
-    background-color: #ff2e00;
-}
-
-.show-btn:focus, .close-btn:focus {
-    outline: none;
-}
-
