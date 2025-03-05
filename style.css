@@ -88,15 +88,27 @@ form {
     width: 100%;
 }
 
+/* Styling for the input field */
+.input {
+    padding: 0.8rem 1rem; /* Add padding for spacing inside the input */
+    border: 2px solid #a9a9a9; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Make it full width */
+    margin-bottom: 1rem; /* Add space below the input */
+    font-size: 1rem; /* Adjust font size */
+}
+
 .input::placeholder {
-    color: #a9a9a9;
+    color: #a9a9a9; /* Gray color for placeholder text */
 }
 
+/* Focus effect on the input field */
 .input:focus {
-    border-color: #ff4500;
-    outline: none;
+    border-color: #ff4500; /* Focus border color */
+    outline: none; /* Remove outline on focus */
 }
 
+/* Styling for the todo list */
 .todos {
     background-color: #ffffff;
     margin-top: 20px;
@@ -104,6 +116,7 @@ form {
     list-style-type: none;
 }
 
+/* Styling for each list item */
 .todos li {
     border-top: 1px solid #f0f0f0;
     padding: 1rem 2rem;
@@ -112,24 +125,31 @@ form {
     background-color: #ffebf5;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease;
     border-radius: 10px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and emoji */
 }
 
+/* Hover effect on list items */
 .todos li:hover {
     background-color: #ffabbd; /* Bright coral-pink hover */
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+/* Styling for completed tasks */
 .todos li.completed {
     color: #7d7d7d;
     background-color: #d4edda;
 }
 
+/* Add checkmark emoji to completed tasks */
 .todos li.completed::after {
-    content: "✔️";
-    color: #008000;
+    content: "✔️"; /* Checkmark emoji */
+    color: #008000; /* Green color for checkmark */
     margin-left: 10px;
 }
 
+/* Info box styling */
 .info {
     position: fixed;
     top: 1rem;
