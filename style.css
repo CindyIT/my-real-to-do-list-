@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('file:///C:/Users/giles/Desktop/TODOLIST/todo-list-main/IMAGE/9.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire background */
+    font-family: "Amasis MT Pro Black", sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
