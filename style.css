@@ -31,35 +31,36 @@ body {
 /* Add this to the head section of your HTML for the font */
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-h1 {
-    color: #fff; /* White color */
-    font-family: '/* Add this to the head section of your HTML for the font */
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+/* Apply the Poppins font to the body */
+body {
+    font-family: 'Poppins', sans-serif; /* Make sure the body text uses Poppins font */
+}
 
-/* Applying Algerian font to the heading */
+/* Heading (h1) styling */
 h1 {
-    font-family: 'Algerian', sans-serif; /* Setting Algerian font */
-    font-size: 7rem; /* Double the normal size */
-    font-weight: bold; /* Bold font */
+    font-family: 'Poppins', sans-serif; /* Applying Poppins font */
+    font-size: 8rem; /* Double the normal size */
+    font-weight: bold; /* Bold text */
     color: #fff; /* White color for better contrast */
     text-align: center;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
     margin-bottom: 20px;
-}
+    animation: slideIn 2s ease-out; /* Adding smooth animation */
 }
 
 /* Animation for the h1 element */
 @keyframes slideIn {
     0% {
-        transform: translateY(-100%);
-        opacity: 0;
+        transform: translateY(-100%); /* Start off the screen */
+        opacity: 0; /* Invisible at the start */
     }
     100% {
-        transform: translateY(0);
-        opacity: 1;
+        transform: translateY(0); /* Move to its normal position */
+        opacity: 1; /* Fully visible */
     }
 }
 
+/* Adding emojis before and after the text */
 h1::before {
     content: "🎉  "; /* Adding an emoji before the text */
 }
@@ -67,37 +68,6 @@ h1::before {
 h1::after {
     content: " 🎯"; /* Adding another emoji after the text */
 }
-', sans-serif; /* Using the Poppins font */
-    font-size: 4rem; /* Increased font size */
-    font-weight: bold; /* Made the text bold */
-    text-align: center;
-    opacity: 1; /* Full opacity for better visibility */
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Added a subtle text shadow */
-    margin-bottom: 20px;
-    animation: slideIn 2s ease-out; /* Adding animation */
-}
-
-/* Animation for the h1 element */
-@keyframes slideIn {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-h1::before {
-    content: "🎉  "; /* Adding an emoji before the text */
-}
-
-h1::after {
-    content: " 🎯"; /* Adding another emoji after the text */
-}
-
-
 
 
 form {
