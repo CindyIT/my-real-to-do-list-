@@ -4,6 +4,7 @@ const todosUl = document.getElementById('todos');
 
 
 // Load todos from local storage
+
 const todos = JSON.parse(localStorage.getItem('todos'));
 
 
@@ -25,7 +26,8 @@ form.addEventListener('submit', (e) => {
 function addTodo(todo = null) {
 
     let todoText = input.value;
-	 if (todo) {
+
+    if (todo) {
 
         todoText = todo.text;
 
@@ -78,5 +80,30 @@ function addTodo(todo = null) {
         updateLS();
 
     }
+
+}
+
+
+function updateLS() {
+
+    const todosEl = document.querySelectorAll('li');
+
+    const todos = [];
+
+
+    todosEl.forEach((todoEl) => {
+
+        todos.push({
+
+            text: todoEl.innerText,
+
+            completed: todoEl.classList.contains('completed')
+
+        });
+
+    });
+
+
+    localStorage.setItem('todos', JSON.stringify(todos));
 
 }
