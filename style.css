@@ -39,7 +39,7 @@ body {
 /* Heading (h1) styling */
 h1 {
     font-family: 'Poppins', sans-serif; /* Applying Poppins font */
-    font-size: 8rem; /* Double the normal size */
+    font-size: 6rem; /* Double the normal size */
     font-weight: bold; /* Bold text */
     color: #000; /* White color for better contrast */
     text-align: center;
@@ -79,22 +79,13 @@ form {
     flex-direction: column;
 }
 
-.input {
-    border: 2px solid #ff6ec7; /* Bright pink border */
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    transition: border 0.3s ease-in-out;
-    width: 100%;
-}
-
 /* Styling for the input field */
 .input {
-    padding: 0.8rem 1rem; /* Add padding for spacing inside the input */
+    padding: 1rem 1.2rem; /* Increased padding for better spacing inside the input */
     border: 2px solid #a9a9a9; /* Light gray border */
     border-radius: 10px; /* Rounded corners */
     width: 100%; /* Make it full width */
-    margin-bottom: 1rem; /* Add space below the input */
+    margin-bottom: 1.5rem; /* Increased space below the input */
     font-size: 1rem; /* Adjust font size */
 }
 
@@ -114,20 +105,22 @@ form {
     margin-top: 20px;
     padding: 0;
     list-style-type: none;
+    margin-bottom: 2rem; /* Space at the bottom of the list */
 }
 
 /* Styling for each list item */
 .todos li {
     border-top: 1px solid #f0f0f0;
-    padding: 1rem 2rem;
+    padding: 1.2rem 2rem; /* Increased padding for more space */
     width: 100%;
     cursor: pointer;
-    background-color: #ffebf5;
+    background-color: #fce5cd; /* Slightly different light background */
     transition: background-color 0.3s ease-in-out, transform 0.3s ease;
-    border-radius: 10px;
+    border-radius: 12px; /* Rounded corners */
     display: flex;
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space between text and emoji */
+    margin-bottom: 1rem; /* Space between each todo item */
 }
 
 /* Hover effect on list items */
@@ -154,7 +147,7 @@ form {
     position: fixed;
     top: 1rem;
     right: 2rem;
-    width: 100px;
+    width: 120px; /* Increased width of the info box */
     height: auto;
     padding: 1rem;
     background-color: #ff6f61;
@@ -164,9 +157,10 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 1rem; /* Increased font size for better readability */
     color: white;
 }
+
 
 .footer {
     background-color: black; /* Kept background black */
