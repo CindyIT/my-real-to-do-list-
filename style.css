@@ -41,7 +41,7 @@ h1 {
     font-family: 'Poppins', sans-serif; /* Applying Poppins font */
     font-size: 8rem; /* Double the normal size */
     font-weight: bold; /* Bold text */
-    color: #fff; /* White color for better contrast */
+    color: #000; /* White color for better contrast */
     text-align: center;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
     margin-bottom: 20px;
@@ -65,9 +65,6 @@ h1::before {
     content: "🎉  "; /* Adding an emoji before the text */
 }
 
-h1::after {
-    content: " 🎯"; /* Adding another emoji after the text */
-}
 
 
 form {
