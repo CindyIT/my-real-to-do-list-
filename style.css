@@ -42,4 +42,47 @@ h1 {
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
     margin-bottom: 20px;
 }
+}/* Animation for the h1 element */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1::before {
+    content: "🎉  "; /* Adding an emoji before the text */
+}
+
+h1::after {
+    content: " 🎯"; /* Adding another emoji after the text */
+}
+', sans-serif; /* Using the Poppins font */
+    font-size: 4rem; /* Increased font size */
+    font-weight: bold; /* Made the text bold */
+    text-align: center;
+    opacity: 1; /* Full opacity for better visibility */
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Added a subtle text shadow */
+    margin-bottom: 20px;
+    animation: slideIn 2s ease-out; /* Adding animation */
+}
+
+/* Animation for the h1 element */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1::before {
+    content: "🎉  "; /* Adding an emoji before the text */
 }
