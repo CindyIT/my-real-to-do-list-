@@ -6,9 +6,8 @@
 
 body {
     background: url('IMAGE/9.jpg') no-repeat center center fixed;
-
     background-size: cover; /* Ensures the image covers the entire background */
-    font-family: "Amasis MT Pro Black", sans-serif;
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font is applied */
     color: #222;
     display: flex;
     flex-direction: column;
@@ -18,54 +17,30 @@ body {
     padding: 20px;
 }
 
-
-.container {
-    flex-grow: 1; /* Pushes the footer down */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
-}
-
-/* Add this to the head section of your HTML for the font */
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-
-/* Apply the Poppins font to the body */
-body {
-    font-family: 'Poppins', sans-serif; /* Make sure the body text uses Poppins font */
-}
-
-/* Heading (h1) styling */
 h1 {
-    font-family: 'Poppins', sans-serif; /* Applying Poppins font */
-    font-size: 6rem; /* Double the normal size */
-    font-weight: bold; /* Bold text */
-    color: #000; /* White color for better contrast */
+    font-size: 5rem; /* Reduced font size for better mobile view */
+    font-weight: bold;
+    color: #000;
     text-align: center;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
-    animation: slideIn 2s ease-out; /* Adding smooth animation */
+    animation: slideIn 2s ease-out;
 }
 
-/* Animation for the h1 element */
 @keyframes slideIn {
     0% {
-        transform: translateY(-100%); /* Start off the screen */
-        opacity: 0; /* Invisible at the start */
+        transform: translateY(-100%);
+        opacity: 0;
     }
     100% {
-        transform: translateY(0); /* Move to its normal position */
-        opacity: 1; /* Fully visible */
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
-/* Adding emojis before and after the text */
 h1::before {
-    content: "🎉  "; /* Adding an emoji before the text */
+    content: "🎉  ";
 }
-
-
 
 form {
     width: 100%;
@@ -79,75 +54,67 @@ form {
     flex-direction: column;
 }
 
-/* Styling for the input field */
 .input {
-    padding: 1rem 1.2rem; /* Increased padding for better spacing inside the input */
-    border: 2px solid #a9a9a9; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
-    width: 100%; /* Make it full width */
-    margin-bottom: 1.5rem; /* Increased space below the input */
-    font-size: 1rem; /* Adjust font size */
+    padding: 1rem 1.2rem;
+    border: 2px solid #a9a9a9;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
 .input::placeholder {
-    color: #a9a9a9; /* Gray color for placeholder text */
+    color: #a9a9a9;
 }
 
-/* Focus effect on the input field */
 .input:focus {
-    border-color: #ff4500; /* Focus border color */
-    outline: none; /* Remove outline on focus */
+    border-color: #ff4500;
+    outline: none;
 }
 
-/* Styling for the todo list */
 .todos {
     background-color: #ffffff;
     margin-top: 20px;
     padding: 0;
     list-style-type: none;
-    margin-bottom: 2rem; /* Space at the bottom of the list */
+    margin-bottom: 2rem;
 }
 
-/* Styling for each list item */
 .todos li {
     border-top: 1px solid #f0f0f0;
-    padding: 1.2rem 2rem; /* Increased padding for more space */
+    padding: 1.2rem 2rem;
     width: 100%;
     cursor: pointer;
-    background-color: #fce5cd; /* Slightly different light background */
+    background-color: #fce5cd;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease;
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 12px;
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between text and emoji */
-    margin-bottom: 1rem; /* Space between each todo item */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
-/* Hover effect on list items */
 .todos li:hover {
-    background-color: #ffabbd; /* Bright coral-pink hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #ffabbd;
+    transform: scale(1.05);
 }
 
-/* Styling for completed tasks */
 .todos li.completed {
     color: #7d7d7d;
     background-color: #d4edda;
 }
 
-/* Add checkmark emoji to completed tasks */
 .todos li.completed::after {
-    content: "✔️"; /* Checkmark emoji */
-    color: #008000; /* Green color for checkmark */
+    content: "✔️";
+    color: #008000;
     margin-left: 10px;
 }
 
-/* Info box styling */
 .info {
     position: fixed;
     top: 1rem;
     right: 2rem;
-    width: 120px; /* Increased width of the info box */
+    width: 120px;
     height: auto;
     padding: 1rem;
     background-color: #ff6f61;
@@ -157,29 +124,93 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem; /* Increased font size for better readability */
+    font-size: 1rem;
     color: white;
 }
 
 .footer {
-    background-color: black; /* Kept background black */
-    color: #c71585; /* Dark pink text */
-    padding: 0.8rem 1.5rem; /* Reduced padding for a smaller footer height */
-    text-align: center; /* Center the text */
-    font-size: 1rem; /* Adjust font size for readability */
-    width: 100%; /* Full width of the screen */
-    position: fixed; /* Fix it at the bottom of the page */
-    left: 0; /* Align to the left */
-    bottom: 0; /* Stick to the bottom */
-    box-shadow: 0px -4px 10px rgba(255, 20, 147, 0.5); /* Subtle dark pink glow */
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Align the content vertically */
-    white-space: nowrap; /* Prevent text from wrapping into multiple lines */
+    background-color: black;
+    color: #c71585;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0px -4px 10px rgba(255, 20, 147, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .footer p {
-    margin: 0; /* Remove margin to keep the text aligned in a single line */
-    font-size: 0.9rem; /* Adjust font size slightly for a cleaner look */
+    margin: 0;
+    font-size: 0.9rem;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; /* Smaller heading on mobile */
+    }
+
+    .input {
+        font-size: 0.9rem; /* Adjust input font size */
+        padding: 0.8rem 1rem; /* Adjust padding */
+    }
+
+    .container {
+        max-width: 100%; /* Full-width container on mobile */
+        padding: 0 10px; /* Add padding to avoid edge clipping */
+    }
+
+    form {
+        padding: 1.5rem; /* Reduce padding for mobile */
+        max-width: 90%; /* Limit form width to 90% on mobile */
+    }
+
+    .footer {
+        font-size: 0.8rem; /* Smaller font size in footer */
+        padding: 0.5rem 1rem; /* Reduced footer padding for mobile */
+    }
+
+    .info {
+        width: 100px; /* Reduce width of info box */
+        font-size: 0.9rem; /* Smaller font size for info box */
+        padding: 0.8rem; /* Adjust padding */
+    }
+
+    .todos li {
+        padding: 1rem 1.5rem; /* Adjust padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem; /* Further reduce heading size on very small screens */
+    }
+
+    .input {
+        font-size: 0.8rem; /* Adjust input font size for smaller screens */
+    }
+
+    .footer {
+        font-size: 0.75rem; /* Smaller footer text for very small screens */
+        padding: 0.5rem; /* Reduce padding further */
+    }
+
+    .info {
+        font-size: 0.8rem; /* Adjust font size of the info box */
+    }
+
+    form {
+        max-width: 100%; /* Ensure form is full-width on small screens */
+    }
+
+    .todos li {
+        padding: 1rem; /* Adjust padding for todos on very small screens */
+    }
+}
+ 
