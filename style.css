@@ -161,11 +161,10 @@ form {
     color: white;
 }
 
-
 .footer {
     background-color: black; /* Kept background black */
     color: #c71585; /* Dark pink text */
-    padding: 1.5rem; /* Slightly increased padding for better spacing */
+    padding: 0.8rem 1.5rem; /* Reduced padding for a smaller footer height */
     text-align: center; /* Center the text */
     font-size: 1rem; /* Adjust font size for readability */
     width: 100%; /* Full width of the screen */
@@ -173,12 +172,14 @@ form {
     left: 0; /* Align to the left */
     bottom: 0; /* Stick to the bottom */
     box-shadow: 0px -4px 10px rgba(255, 20, 147, 0.5); /* Subtle dark pink glow */
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align the content vertically */
+    white-space: nowrap; /* Prevent text from wrapping into multiple lines */
 }
 
 .footer p {
-    margin: 0.5rem 0; /* Add some space between paragraphs */
+    margin: 0; /* Remove margin to keep the text aligned in a single line */
+    font-size: 0.9rem; /* Adjust font size slightly for a cleaner look */
 }
 
-.footer b {
-    font-weight: bold; /* Ensure bold text is emphasized */
-}
