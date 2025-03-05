@@ -138,3 +138,15 @@ h1::before {
     font-size: 0.9rem;
     color: white;
 }
+.footer {
+    background-color: black; /* Kept background black */
+    color: #c71585; /* Dark pink text */
+    padding: 1.5rem; /* Slightly increased padding for better spacing */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem; /* Increased font size to roughly twice the original */
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0px -4px 10px rgba(255, 20, 147, 0.5); /* Subtle dark pink glow */
+    margin-top: 0px;
+}
