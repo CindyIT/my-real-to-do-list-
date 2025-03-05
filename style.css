@@ -85,4 +85,39 @@ h1::after {
 
 h1::before {
     content: "🎉  "; /* Adding an emoji before the text */
+}    border-color: #ff4500;
+    outline: none;
+}
+
+.todos {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.todos li {
+    border-top: 1px solid #f0f0f0;
+    padding: 1rem 2rem;
+    width: 100%;
+    cursor: pointer;
+    background-color: #ffebf5;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.todos li:hover {
+    background-color: #ffabbd; /* Bright coral-pink hover */
+    transform: scale(1.05);
+}
+
+.todos li.completed {
+    color: #7d7d7d;
+    background-color: #d4edda;
+}
+
+.todos li.completed::after {
+    content: "✔️";
+    color: #008000;
+    margin-left: 10px;
 }
